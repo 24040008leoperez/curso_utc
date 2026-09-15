@@ -1,13 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practicas</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* FONDO */
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #020617, #0f172a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        /* CONTENEDOR */
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 40px 60px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+            animation: fadeIn 1.2s ease;
+        }
+
+        /* TITULO */
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 15px;
+        }
+
+        /* NOMBRE */
+        h6 {
+            font-size: 1rem;
+            color: #94a3b8;
+            letter-spacing: 2px;
+        }
+
+        /* EFECTO HOVER */
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+            box-shadow: 0 0 60px rgba(0,114,255,0.4);
+        }
+
+        /* ANIMACION */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <h1>te amo prado</h1>
-    <h6>Joel damian arriaga gutierrez</h6>
-    
+
+    <div class="card">
+        <h1>Holaaa mundo 🚀</h1>
+        <h6>Joel Damián Arriaga Gutiérrez</h6>
+    </div>
+
 </body>
 </html>
